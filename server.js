@@ -48,6 +48,11 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(especificacionSwagger));
 // Middleware para parsear los cuerpos de las solicitudes
 app.use(express.json());
 
+// Ruta GET para la raíz ("/")
+app.get('/', (req, res) => {
+  res.send('Bienvenido a la API de Empleados');
+});
+
 // Rutas de la API (en el mismo archivo)
 
 // Ruta GET para obtener todos los empleados
