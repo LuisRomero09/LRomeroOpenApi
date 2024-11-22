@@ -28,7 +28,7 @@ const definicionSwagger = {
   },
   servers: [
     {
-      url: process.env.HOST_URL || 'http://localhost:8083', // Usa la URL desde las variables de entornoo
+      url: process.env.HOST_URL || 'http://localhost:8083', // Usa la URL desde las variables de entorno
       description: 'Servidor local',
     },
   ],
@@ -53,7 +53,7 @@ app.get('/', (req, res) => {
   res.send('Bienvenido a la API de Empleados');
 });
 
-// Rutas de la API (en el mismo archivo)
+
 
 // Ruta GET para obtener todos los empleados
 /**

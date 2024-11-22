@@ -22,7 +22,7 @@ router.get('/empleado', async (req, res) => {
  *     description: Alta de empleados
  *     responses:
  *       200:
- *         description: Regresa un objeto con el resultado de la operación de altaw
+ *         description: Regresa un objeto con el resultado de la operación de alta
  */
 router.post('/empleado', (req, res) => {
   // Ejemplo de operación de alta
