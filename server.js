@@ -28,7 +28,7 @@ const definicionSwagger = {
   },
   servers: [
     {
-      url: process.env.HOST_URL || 'http://localhost:8083', // Usa la URL desde las variables de entorno
+      url: process.env.HOST_URL || 'http://localhost:8083', // Usa la URL desde las variables de entornoo
       description: 'Servidor local',
     },
   ],
@@ -42,8 +42,8 @@ const opcionesSwaggerJsdoc = {
 // Generar la especificación Swagger
 const especificacionSwagger = swaggerJsDoc(opcionesSwaggerJsdoc);
 
-// Ruta para visualizar la documentación Swagger
-app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(especificacionSwagger));
+// Ruta para visualizar la documentación Swagger en la raíz
+app.use('/', swaggerUI.serve, swaggerUI.setup(especificacionSwagger));
 
 // Middleware para parsear los cuerpos de las solicitudes
 app.use(express.json());
@@ -69,7 +69,7 @@ app.get('/empleado', (req, res) => {
   res.json([{ nombre: 'Juan', edad: 30 }, { nombre: 'Ana', edad: 25 }]); // Ejemplo de respuesta
 });
 
-// Ruta POST para crear un nuevo empleadow
+// Ruta POST para crear un nuevo empleado
 /**
  * @swagger
  * /empleado:
