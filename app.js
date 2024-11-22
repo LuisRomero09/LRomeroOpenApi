@@ -4,6 +4,7 @@ import fs from 'fs';
 import dotenv from 'dotenv';
 
 // Configurar dotenv para cargar variables de entorno
+//HOLA
 dotenv.config();
 
 const app = express();
