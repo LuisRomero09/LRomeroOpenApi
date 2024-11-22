@@ -3,7 +3,7 @@ import swaggerUi from 'swagger-ui-express';
 import fs from 'fs';
 import dotenv from 'dotenv';
 
-// Configurar dotenv para cargar variables de entornoa
+// Configurar dotenv para cargar variables de entorno
 dotenv.config();
 
 const app = express();
@@ -23,7 +23,7 @@ app.get('/api/saludo', (req, res) => {
 // Puerto desde las variables de entorno o por defecto
 const PORT = process.env.PORT || 3000;
 
-// Iniciar el servidor
+// Iniciar el servidorr
 app.listen(PORT, () => {
   // Cambia los logs para que reflejen la URL correcta en producción
   console.log(`Servidor escuchando en http://localhost:${PORT}`);
