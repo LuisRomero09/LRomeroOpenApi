@@ -69,7 +69,7 @@ app.get('/empleado', (req, res) => {
   res.json([{ nombre: 'Juan', edad: 30 }, { nombre: 'Ana', edad: 25 }]); // Ejemplo de respuesta
 });
 
-// Ruta POST para crear un nuevo empleado
+// Ruta POST para crear un nuevo empleadow
 /**
  * @swagger
  * /empleado:
